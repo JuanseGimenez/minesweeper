@@ -1,7 +1,8 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe 'MineSweepers', type: :request do
-
   describe 'GET /resolved action' do
     before do
       get '/resolved'
@@ -15,5 +16,4 @@ RSpec.describe 'MineSweepers', type: :request do
       expect(response.content_type).to include('application/json')
     end
   end
-
 end
