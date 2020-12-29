@@ -12,7 +12,7 @@ gem 'oj', '~> 3.3', '>= 3.3.5'
 gem 'puma', '~> 4.1'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
 gem 'sass-rails', '>= 6'
-gem 'sqlite3', '~> 1.4'
+gem 'pg'
 gem 'turbolinks', '~> 5'
 gem 'webpacker', '~> 4.0'
 
@@ -33,7 +33,9 @@ end
 group :test do
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
+  gem 'vcr'
   gem 'webdrivers'
+  gem 'webmock'
 end
 
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]

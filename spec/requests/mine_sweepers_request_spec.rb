@@ -5,7 +5,9 @@ require 'rails_helper'
 RSpec.describe 'MineSweepers', type: :request do
   describe 'GET /resolved action' do
     before do
-      get '/resolved'
+      VCR.use_cassette('mine_sweeper_generator') do
+        get '/resolved'
+      end
     end
 
     it 'returns success' do
