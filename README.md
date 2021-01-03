@@ -1,24 +1,21 @@
-# README
+# BOMB NEIGHBOARDS OF TERROR
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Todos conocemos o alguna vez usamos para distraernos el famoso Buscaminas en esta especial,\
+oportunidad nuestro reto técnico tiene como finalidad resolver un mapa de dicho juego hemos preparado
+un API disponible en https://mine-sweeper-generator.herokuapp.com/solver en el cual un generador
+de mapas aleatorios te permite recibir una matriz que representa a un Array bidimensional como se
+muestra en el siguiente ejemplo:
 
-Things you may want to cover:
+![Screenshot1](image1.png)
 
-* Ruby version
+El problema se declara como resuelto cuando encontramos cantidad de bombas adyacentes de una casilla
+sin bomba, con lo cual el ejemplo anterior tiene como solución la siguiente forma:
 
-* System dependencies
+![Screenshot1](image2.png)
 
-* Configuration
+Esta matriz llena representa la solución del problema planteado en el mapa 1, para disponibilizar los datos
+debe exponerse una API ( Recomendamos usar heroku ), usando una nomenclatura similar a la expuesta en https://mine-sweeper-generator.herokuapp.com/solver,
+pero con la peculiaridad que la respuesta de tu API debe tener 2 objetos en la salida , uno para el mapa
+por resolver y el otro con el mapa resuelto algo similar a lo que representamos a continuación :
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![Screenshot1](image3.png)
